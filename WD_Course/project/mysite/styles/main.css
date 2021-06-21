@@ -1,0 +1,132 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css') ; 
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap');
+
+/* header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Rubik', sans-serif;
+    padding: 10px 20px;
+}
+.logo img {
+    width: 70px; 
+    height: 70px ;
+    padding: 10px ;
+}
+
+.header-nav {
+    display: flex;
+}
+.header-nav li {
+    padding: 0.5em;
+    margin: 0 0.5em;
+}
+
+.header-nav li a {
+    text-decoration: none;
+    color: #0E3045 ; 
+    font-size: 16px ;
+    font-weight: bold ; 
+}
+
+.header-nav li:hover {
+    border-bottom: 3px solid #F2B80E;
+}
+
+/* main styles */
+body {
+    font-family: 'Rubik', sans-serif;
+    color: #25292D;
+}
+
+.heading-shadow {
+    font-family: 'Kaushan Script', cursive;
+    color: rgba(218,223,227,0.7);
+    font-size: 60px;
+    font-weight: 400;
+    letter-spacing: -1px;
+}
+h2 {
+    font-size: 32px;
+    line-height: 1.5;
+    font-weight: 400;
+    position: relative ;  
+    bottom: 32px ; 
+}
+.line {
+    align-self: center ;
+    width: 8em;
+    border-top: 3px solid #E0AA0D;
+    position: relative;
+    bottom: 25px ;
+}
+
+/* footer */
+
+footer {
+    margin-top: 40px ;
+    color: #7b7e81;
+}
+.footer-contacts {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 3em 0 ;
+    background-color: #25292D ; 
+}
+.address,
+.soc-media-icons,
+.phone-and-email {
+    width: 30%;
+}
+
+.footer-contacts h5 {
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+    padding-bottom: 1em;
+}
+.footer-contacts p {
+    padding-bottom: 0.3em;
+}
+.icons i{
+    font-size: 20px;
+    padding: 0.5em;
+}
+
+/* second part of footer with navigation */
+
+.footer-nav-logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    background-color: #212428;
+}
+.logo-and-copyright {
+    display: flex;
+    align-items: center;
+}
+.copyright {
+    font-size: 14px;
+}
+
+.footer-nav {
+    display: flex;
+}
+.footer-nav li {
+    padding: 0.5em;
+    margin: 0 0.5em;
+}
+
+.footer-nav li a {
+    text-decoration: none;
+    color: #7b7e81;
+    font-size: 14px ;
+    font-weight: bold ; 
+}
+
+.footer-nav li a:hover {
+    color: #F2B80E;
+}
