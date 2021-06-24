@@ -9,8 +9,7 @@
     <link rel="icon" href="../images/lish_logo.png">
     <link rel="stylesheet" href="../styles/reset.css">
     <link rel="stylesheet" href="../styles/main.css">
-    <link rel="stylesheet" href="../styles/header.css">
-    <link rel="stylesheet" href="../styles/footer.css">
+    <link rel="stylesheet" href="../styles/contactspage.css">
 </head>
 
 <body>
@@ -30,42 +29,49 @@
     </header>
     <main>
         <section class="contact-us">
-            <h3 class="heading-shadow">Location</h3>
-            <h2>CONTACT US</h2>
-            <div class="line"></div>
+            <div class="contacts-heading">
+                <h3 class="heading-shadow">Location</h3>
+                <h2>CONTACT US</h2>
+                <div class="line"></div>
+            </div>
             <p>We are open to your feedback and your opinion about iur restaurant. If you have any questions,
                 suggestions or commercial offers, please feel free to contact us any suitable way. Every guest can book
                 a table or ask any question – our representatives will reply and provide you will all necessary
                 information.</p>
             <p>We are looking forward hearing from you and seeing you as our guests!</p>
         </section>
-        <div class="contact-wrapper">
+        <div class="contacts-wrapper">
             <div class="more-info">
-                <!-- icon -->
+                <i class="fas fa-car"></i>
                 <h5>PARKING</h5>
                 <p>We have a comfortable parking, so you can leave your car and enjoy your meals without any worries!
                 </p>
             </div>
             <div class="more-info">
-                <!-- icon -->
+                <i class="fas fa-phone"></i>
                 <h5>TELEPHONE</h5>
                 <p>We are happy to answer your questions or give you directions via phone.</p>
                 <span class="bold">+1 800 889 9898</span>
             </div>
             <div class="more-info">
-                <!-- icon -->
+                <i class="fas fa-envelope"></i>
                 <h5>EMAIL</h5>
                 <p>If you are on the go and still want to ask a question, simply drop us an e-mail.</p>
                 <span class="bold">mail@demolink.org</span>
             </div>
         </div>
-        <div class="map=wrapper">
-            <!-- map image -->
+        <div class="map-wrapper">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2932.9811613569045!2d23.362489914717454!3d42.6829413791665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40aa85ea1d095bed%3A0x1e1ee7b05fc6abcf!2z0JLQtdGA0LXRgdC40Y8!5e0!3m2!1sbg!2sbg!4v1624274430558!5m2!1sbg!2sbg"
+                width="1000" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
         <section class="contact-form">
-            <h3 class="heading-shadow">Email Us</h3>
-            <h2>CONTACT FORM</h2>
-            <form>
+            <div class="contacts-heading">
+                <h3 class="heading-shadow">Email Us</h3>
+                <h2>CONTACT FORM</h2>
+                <div class="line"></div>
+            </div>
+            <form class="form-wrapper">
                 <div class="form-labels">
                     <div class="data-fields">
                         <label>
@@ -79,10 +85,12 @@
                         </label>
                     </div>
                     <div class="notes">
-                        <textarea cols="30" rows="10" placeholder="Your Message"></textarea>
+                        <textarea placeholder="Your Message"></textarea>
                     </div>
                 </div>
-                <button class="reserve-btn">SEND MESSAGE</button>
+                <div class="btn-wrapper">
+                    <button class="reserve-btn">SEND MESSAGE</button>
+                </div>
             </form>
         </section>
     </main>

@@ -1,0 +1,47 @@
+/* styles - list */
+
+.gallery-headings,
+.menu-list, 
+.fancy-element {
+    display: flex;
+    justify-content: center;
+}
+.gallery-headings {
+    flex-direction: column;
+    text-align: center;
+}
+.menu-list li {
+    padding: 1em 1em 0.5em 1em; 
+}
+.menu-list li:hover {
+    color: #E0AA0D; 
+}
+.gallery-photos {
+    display: flex;
+    justify-content: space-around;    
+    padding-bottom: 2em;
+}
+.photo-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+.gallery-photos img {
+    padding: 1em ;
+} 
+.gallery-photos img:hover {
+    filter: sepia(80%);
+}
+
+.welcome-section p {
+    padding: 1em 5em;
+    line-height: 1.5 ; 
+    font-size: 17px;
+    text-align: center;
+    color: #7b7e81;
+}
+
+.fancy-element {
+    padding: 2em 0;
+}

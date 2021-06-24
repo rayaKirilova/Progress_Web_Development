@@ -1,28 +1,125 @@
 
-/* main styles */
-body {
-    font-family: 'Rubik', sans-serif;
-    color: #25292D;
+.about-us-heading,
+.testimonials {
+    display: flex;
+    flex-direction: column ; 
+    justify-content: center;
+    text-align: center;
+}
+.about-us {
+    display: flex;
+    padding-top: 20px;
 }
 
-.heading-shadow {
-    font-family: 'Kaushan Script', cursive;
-    color: rgba(218,223,227,0.7);
-    font-size: 60px;
-    font-weight: 400;
-    letter-spacing: -1px;
+.img-container  {
+    padding-left: 5em ;
 }
-h2 {
-    font-size: 32px;
-    line-height: 1.5;
-    font-weight: 400;
-    position: relative ;  
-    bottom: 32px ; 
+.img-container img {
+    width: 420px;
+    height: 480px ;
 }
-.line {
-    align-self: center ;
-    width: 8em;
-    border-top: 3px solid #E0AA0D;
-    position: relative;
-    bottom: 25px ;
+
+.inform-container {
+    padding: 0 8em 3em 5em ;
 }
+
+.inform-container h5 {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.inform-container p {
+    padding: 1em 0;
+    line-height: 1.5 ; 
+    color: #7b7e81;
+    font-size: 17px;
+}
+.signature {
+    padding-top: 1.5em;
+}
+
+/* fancy element  */
+/* facts */
+.fancy-element img {
+    margin: 2em 0;
+}
+.fancy-element, 
+.facts,
+.fact-wrapper,
+.team-img-wrapper,
+.banner  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+}
+.facts,
+.team-img-wrapper {
+    justify-content: space-around;
+    padding-top: 3em;
+}
+.fact-wrapper i {
+    padding-right: 0.5em;
+    font-size: 4em;
+    color: #8b939b;
+    opacity: 0.5;
+}
+.num {
+    font-size: 2.5em;
+    color: black;
+}
+.text {
+    padding-top: 0.2em;
+    color: #E0AA0D;
+    font-weight: 500;
+}
+
+/* our team */
+.team-img-wrapper {
+    padding: 3em ; 
+}
+.chef h5 {
+    padding: 1em 0 0.3em 0;
+    font-size: 18px;
+}
+.position,
+.testimonials p,
+.cons-sign {
+    color: #8b939b;  
+}
+
+/* testimonials  */
+
+.testimonials p {
+    font-style: italic ;
+    line-height: 1.3 ; 
+    padding: 0 8em 1em 8em;
+}
+
+.quotes i {
+    font-size: 26px;
+    padding: 0 0 1em 0;
+}
+
+.consumer {
+    width: 100px;
+    height: 100px;
+    border-radius: 50% ; 
+}
+.testimonials h5 {
+    padding-top: 1em;
+    font-weight: 500;
+}
+.cons-sign {
+    padding-top: 0.5em;
+
+}
+
+
+
+
+
+
+
+
+

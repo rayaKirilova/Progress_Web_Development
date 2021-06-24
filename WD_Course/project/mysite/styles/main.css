@@ -29,7 +29,6 @@ header {
     font-size: 16px ;
     font-weight: bold ; 
 }
-
 .header-nav li:hover {
     border-bottom: 3px solid #F2B80E;
 }
@@ -61,7 +60,6 @@ h2 {
     position: relative;
     bottom: 25px ;
 }
-
 /* footer */
 
 footer {
