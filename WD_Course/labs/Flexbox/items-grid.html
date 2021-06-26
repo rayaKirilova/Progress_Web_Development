@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Items</title>
+    <style>
+        .wrapper {
+            display: grid;
+            align-items: center;
+            grid-column-gap: 1em;
+            grid-row-gap: 1em;
+
+            /* 	calculate the number of columns, and set each column width from 10em to 1fr, depending on available space */
+            grid-template-columns: repeat(auto-fit, minmax(10em, 1fr));
+
+            border: 5px solid #f99;
+        }
+
+        .box {
+            height: 8em;
+            border: 2px solid #99f;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+
+</html>

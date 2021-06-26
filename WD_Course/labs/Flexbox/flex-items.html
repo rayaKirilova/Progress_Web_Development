@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Items</title>
+    <style>
+        ul, li , a {
+            box-sizing: border-box;
+        }
+        ul {
+            display: flex;
+            justify-content: center;
+            margin: 0; padding: 0;
+            height: 5em;
+            border: 5px solid palevioletred ; 
+        }
+        ul li {
+            display: flex;
+            flex: 1; 
+            list-style: none;
+            border: 5px solid rgb(47, 255, 175) ; 
+        }
+
+        ul li a {
+            display: flex;
+            flex: 1;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            border: 5px solid rgb(86, 86, 138) ; 
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="#">Item 0</a></li>
+        <li><a href="#">Item 1</a></li>
+        <li><a href="#">Item 2</a></li>
+    </ul>
+</body>
+</html>

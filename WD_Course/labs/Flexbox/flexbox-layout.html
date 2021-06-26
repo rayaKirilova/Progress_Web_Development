@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box Layout</title>
+    <style>
+        body {
+            margin: 0;
+        }
+        header{
+            height: 20vh;
+            background-color: grey;
+            color: white;
+        }
+        .flex-container {
+            min-height: 70vh;
+            display: flex;
+        }
+        aside:nth-of-type(1){
+            flex: 2;
+            background-color: #CCCCCC;
+        }
+        aside:nth-of-type(2){
+            flex: 1;
+            background-color: #CCCCCC;
+        }
+        main {
+            flex: 5;
+        }
+        footer {
+            height: 10vh;
+            background-color: grey;
+        }   
+    </style>
+</head>
+
+<body>
+    <header>HEADER</header>
+    <div class="flex-container">
+        <aside>LEFT</aside>
+        <main>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi eligendi aspernatur exercitationem
+                repudiandae, veniam ipsa voluptatem magni. Id architecto repellat modi cupiditate! Corporis commodi
+                accusamus aut inventore cumque, tenetur quidem.</p>
+        </main>
+        <aside>RIGHT</aside>
+    </div>
+    <footer>FOOTER</footer>
+</body>
+
+</html>
