@@ -1,0 +1,45 @@
+body, ul, li, p {
+    margin: 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif ; 
+}
+
+.main-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    list-style: none;
+    background-color: #62B7B6 ; 
+    color: white;
+}
+.main-menu li {
+    padding: 1em;
+    font-size: 18px;
+}
+
+.dropdown-menu {
+    display: none;
+    list-style: none;
+    background-color: rgb(182, 214, 214) ; 
+}
+.dropdown-menu li {
+    padding: 0.5em;
+    font-size: 14px;
+    border: 1px solid rgba(98, 183, 182, 0.5) ;  
+}
+
+.dropdown-menu {
+    display: none;
+}
+.main-menu li:hover {
+    background-color: #458d8c;
+}
+.main-menu li:hover > .dropdown-menu {
+    display: block;
+    position: absolute;
+    margin-top: 1em;
+    padding: 0  ;
+}
+p {
+    margin-top: 0.5em ; 
+}

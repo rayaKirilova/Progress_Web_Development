@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Order is Important</title>
+    <style>
+        .broken:active {
+            color: orange;
+        }
+        .broken:visited {
+            color: blue;
+        }
+        .broken:link {
+            color: green;
+        }
+        .broken:hover {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h2>Next link is with bad ordered pseudo-classes rules:</h2>
+        <p>test <b>hover</b> or <b>active</b> (left click) on link:</p>
+        <a href="#1" class="broken">hover=>yellow, active=>orange</a>
+    </div>
+    <div>
+        <h2>Next link is with proper ordered pseudo-classes rules:</h2>
+        <p>test <b>hover</b> or <b>active</b> (left click) on link:</p>
+        <a href="#1" class="proper">hover=>yellow, active=>orange</a>
+    </div>
+</body>
+</html>

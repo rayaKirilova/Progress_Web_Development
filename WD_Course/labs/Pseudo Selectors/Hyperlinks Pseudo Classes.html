@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link Pseudo Clases</title>
+    <style>
+        a {
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+        .link a:link {
+            color: green;
+        }
+
+        .visited a:visited {
+            color: gray;
+        }
+
+        .active a:active {
+            font-size: 2em;
+            color: red;
+        }
+
+        .focus a:focus {
+            font-size: 1.5em;
+            color: orange;
+            /*text-decoration: inherit;*/
+        }
+
+        .hover a:hover {
+            display: inline-block;
+            padding: 3px;
+            text-decoration: underline;
+            color: #FFF;
+            background-color: #C9460F;
+            border: 5px outset #FF6000;
+        }
+
+        .NB {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <table border=1>
+        <tr>
+            <th>Описание</th>
+            <th>Тестов линк</th>
+            <th>CSS</th>
+        </tr>
+        <tr class="link">
+            <td class="col1">Следния линк показва ефекта от <span class="NB">:link</span><br>
+                <span class="note">(след рефреш на страницата линка ще бъде показан като непосетен)</span>
+            </td>
+            <td class="col2">
+                <script>
+                    document.write('<a href="#' + Date.now() + '">Непосетена връзка</a>');
+                </script>
+            </td>
+            <td class="col3">
+                <pre><code>
+          <span class="NB">a:link</span>{
+            color: green;
+          }
+          </code></pre>
+            </td>
+        </tr>
+        <tr class="active">
+            <td class="col1">Щракнете върху линка и задръжте левия бутон, за да видите ефекта от <span
+                    class="NB">:active</span></td>
+            <td class="col2"><a href="#">Активиране на връзка</a></td>
+            <td class="col3">
+                <pre><code>
+          <span class="NB">a:active</span>{
+            font-size: 2em;
+            color: red;
+          }
+          </code></pre>
+            </td>
+        </tr>
+        <tr class="visited">
+            <td class="col1">Посетете линка за да видите ефекта от <span class="NB">:visited</span></td>
+            <td class="col2"><a href="#">Посетена връзка</a></td>
+            <td class="col3">
+                <pre><code>
+          <span class="NB">a:visited</span>{ 
+            color: gray; 
+          }
+          </code></pre>
+            </td>
+        </tr>
+        <tr class="hover">
+            <td class="col1">Позиционирайте мишката върху линка за да видите ефекта от <span class="NB">:hover</span>
+            </td>
+            <td class="col2">
+                <a class="border_bottom_anime" href="#">Посочване на връзка</a>
+            </td>
+            <td class="col3">
+                <pre><code>
+          <span class="NB">a:hover</span>{
+             display: inline-block;      
+             padding: 3px;
+             text-decoration: underline;
+             color: #FFF;
+             background-color: #C9460F;
+             border: 5px outset #FF6000; 
+          }
+              </code></pre>
+            </td>
+        </tr>
+        <tr class="focus">
+            <td class="col1">Щракнете върху линка за да видите ефекта от <span class="NB">:focus</span></td>
+            <td class="col2"><a id="here" href="#here">Фокус върху връзка</a></td>
+            <td class="col3">
+                <pre><code>
+          <span class="NB">a:focus</span>{
+            font-size: 1.5em;
+            color: orange;
+          }
+          </code></pre>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
