@@ -16,9 +16,12 @@ header {
 }
 
 .header-nav {
+    height: 1em;
+    box-sizing: border-box; 
     display: flex;
 }
 .header-nav li {
+    height: 1em;
     padding: 0.5em;
     margin: 0 0.5em;
 }
