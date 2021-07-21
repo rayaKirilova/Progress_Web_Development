@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto List Generator</title>
+    <style>
+        #form_container {
+            float: left;
+            width: 50%;
+            min-height: 100vh;
+        }
+
+        #resultContainer {
+            float: left;
+            width: 50%;
+            min-height: 100vh;
+            border-left: 1px solid red;
+            box-sizing: border-box;
+        }
+
+        section>h1 {
+            text-align: center;
+        }
+
+        #form_container>div {
+            margin: 1em 0;
+        }
+
+        #form_container>div>label {
+            display: inline-block;
+            width: 50%;
+            text-align: right;
+        }
+
+        #form_container>div>button {
+            display: block;
+            width: 80%;
+            height: 2em;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="form_container">
+        <h1>Автоматично създаване на списък:</h1>
+        <div>
+            <label>Брой на елементите на списъка: </label>
+            <input type="number" id="listItemsCount">
+        </div>
+        <div>
+            <label>Тип на списъка:</label>
+            <select id="listType">
+                <option value="ol" name="list_type">Ordered List</option>
+                <option value="ul" name="list_type">Unordered List</option>
+            </select>
+        </div>
+        <div>
+            <button onclick="createList();">Create List</button>
+        </div>
+    </section>
+    <section id="resultContainer">
+        <h1>Резултат</h1>
+    </section>
+
+    <!-- logic -->
+    <script>
+        var outputNode = document.getElementById('resultContainer'),
+            listTypeNode = document.getElementById('listType')
+        listType,
+            listItemsCount;
+        var listItemsNode = document.getElementById('listItemsCount');
+
+        function createList() {
+            // clean the outputNode content
+            outputNode.innerHTML = '<h1>Резултат</h1>';
+
+            // get list parameters
+            listItemsCount = listItemsNode.value;
+            listType = listTypeNode.value;
+
+            // create the list element
+            var listNode = document.createElement(listType);
+
+            //create list items
+            for (var i = 1; i <= listItemsCount; i++) {
+                // create a li node
+                var listItem = document.createElement('li');
+
+                // set its content:
+                listItem.innerHTML = 'Item ' + i;
+
+                // attach the li node to the list container:
+                listNode.appendChild(listItem);
+            }
+
+            // attach the list container to output node:
+            outputNode.appendChild(listNode);
+        }
+    </script>
+</body>
+
+</html>
